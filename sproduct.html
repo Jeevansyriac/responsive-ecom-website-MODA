@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productpage</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css">
+    <!--style-->
+    <style>
+        .small-img-group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .small-img-col {
+            flex-basis: 24%;
+            cursor: pointer;
+        }
+        .sproduct select{
+            display: block;
+            padding: 5px 10px;
+        }
+    
+        .sproduct input{
+            width: 50px;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .sproduct input:focus{
+            outline: none;
+        }
+        .buy-btn{
+            background: coral;
+            opacity: 1;
+            transition: o.3s all;
+        }
+    
+    
+    
+    
+    </style>
+
+</head>
+
+<body>
+
+    <!--navbar!-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand text-uppercase " href="#">móda</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span><i id="bar" class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="shope.html">Shop</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <i class="fal fa-search"></i>
+                        <i class="fal fa-shopping-bag"></i>
+                    </li>
+            </div>
+        </div>
+    </nav>
+
+
+    <!---product-->
+
+    <section class="container sproduct my-5 pt-5">
+        <div class="row mt-5">
+            <div class="col-lg-5 col-md-12 col-12">
+                <img class="img-fluid w-100 pb-1" src="img/shop/1.jpg" id="MainImg" alt="">
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="img/shop/1.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/shop/24.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/shop/25.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/shop/26.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 col-md-12 col-12">
+                <h6>Home / T-Shirt</h6>
+                <h3 class="py-4">Men's Fashion T-Shirt</h3>
+                <h2>₹499</h2>
+                <select class="my-3">
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>L</option>
+                    <option>M</option>
+                </select>
+                <input type="number" value="1">
+                <button class="buy-btn">Add To Cart</button>
+                <h4 class="mt-5 mb-5" >Product Details</h4>
+                <span>A T-shirt, or tee shirt, is a style of fabric shirt named after the T shape of its body and
+                    sleeves. Traditionally, it has short sleeves and a round neckline, known as a crew neck, which lacks
+                    a collar. T-shirts are generally made of a stretchy, light, and inexpensive fabric and are easy to
+                    clean</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--related product-->
+
+    <section id="freatured" class="my-5 pb-5">
+        <div class="container text-center mt-5 py-5">
+            <h3>Related Product</h3>
+            <hr class="mx-auto">
+        </div>
+        <div class="row mx-auto container-fluid">
+
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/17.jpg"  alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h5 class="p-name">Sport shoe</h5>
+                <h4 class="p-price">₹499</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/19.jpg"  alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <h5 class="p-name">Sport shoe</h5>
+                <h4 class="p-price">₹499</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/20.jpg"  alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h5 class="p-name">Sport shoe</h5>
+                <h4 class="p-price">₹499</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="img/shop/21.jpg"  alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <h5 class="p-name">Sport shoe</h5>
+                <h4 class="p-price">₹499</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+    
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Benefit -->
+
+    <div class="benefit">
+        <div class="container-fluid">
+            <div class="row benefit_row">
+
+                <div class="col-lg-3 benefit_col">
+                    <div class="benefit_item d-flex flex-row aline-items-center">
+                        <div class="benefit_icon">
+                            <i class="fa fa-truck" arial-hidden="true"></i>
+                        </div>
+                        <div class="benefit_content">
+                            <h6>Free Shipping</h6>
+                            <p>Suffered Alteration is Some Form</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 benefit_col">
+                    <div class="benefit_item d-flex flex-row aline-items-center">
+                        <div class="benefit_icon">
+                            <i class="fa fa-undo" arial-hidden="true"></i>
+                        </div>
+                        <div class="benefit_content">
+                            <h6>45 days return</h6>
+                            <p>Making it Look like Readable</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 benefit_col">
+                    <div class="benefit_item d-flex flex-row aline-items-center">
+                        <div class="benefit_icon">
+                            <i class="far fa-money-bill-alt"></i>
+                        </div>
+                        <div class="benefit_content">
+                            <h6 class="benafits">cash on delivery</h6>
+                            <p>cash undengil vangiko</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 benefit_col">
+                    <div class="benefit_item d-flex flex-row aline-items-center">
+                        <div class="benefit_icon">
+                            <i class="far fa-clock"></i>
+                        </div>
+                        <div class="benefit_content">
+                            <h6>Fast delivery</h6>
+                            <p>3 To 7 days </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter -->
+
+    <div class="newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div
+                        class="newsletter_text d-flex flex-column justify-content-center align-items-lg-start align-items-md-center text-center">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe to our Newsletter and get 20% off your first purchase</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form action="post">
+                        <div class="newsletter_form d-flex flex-md-row flex-column flex-xs-column 
+                align-items-center justify-content-lg-end justify-content-center">
+                            <input id="newsletter_email" type="email" placeholder="Your Email" required="required"
+                                data-error="Valid email is required.">
+                            <button id="newsletter_submit" type="submit" class="newsletter_submit_btn trans_300"
+                                value="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="footer_nav_container d-flex flex-sm-row flex-column 
+        align-items-center justify-content-lg-start justify-content-center text-center">
+                        <ul class="footer_nav">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer_social d-flex flex-row align-items-center justify-content-lg-end
+            justify-content-center ">
+                        <ul>
+
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer_nav_container">
+                        <div class="cr text-center">©2022 All rights Reserved.This site is made width <i
+                                class="fa fa-heart-o" aria-hidden="true"> by cairys naveej</i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+<!---productimg slider-->
+
+    <script>
+        var MainImg = document.getElementById('MainImg');
+        var smallimg = document.getElementsByClassName('small-img');
+
+
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;
+        }
+
+        smallimg[1].onclick = function(){
+            MainImg.src =smallimg[1].src;
+        }
+
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src;
+        }
+
+        smallimg[3].onclick = function(){
+            MainImg.src = smallimg[3].src;
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>
